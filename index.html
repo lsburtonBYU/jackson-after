@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is what we do at Nike">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:ital,wght@0,300;0,600;1,300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+
+
+  <title>Home - Nike</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="menu-icon">
+      <svg viewbox="0 0 60 60">
+        <line x1="5%" y1="50%" x2="95%" y2="50%" />
+        <line x1="5%" y1="50%" x2="95%" y2="50%" />
+      </svg>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="shop/">Shop</a></li>
+        <li><a href="about/">About</a></li>
+        <li><a href="contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <picture class="blur">
+      <source media="(min-width: 801px)" srcset="images/hero1470.jpg">
+      <source media="(min-width: 401px)" srcset="images/hero800.jpg">
+      <source media="(min-width: 400px)" srcset="images/hero400.jpg">
+      <img src="images/hero1470.jpg" alt="image of painted nike swoosh">
+    </picture>
+    <div class="text-wrapper">
+      <h1><strong>Nike</strong> </h1>
+      <p>Just Do It</p>
+    </div>
+  </div>
+
+  <main>
+    <div class="fullscreen">
+      <article class="panel">
+        <div class="text-wrapper left">
+          <h2>What We Do</h2>
+          <p>
+            Our Mission: At Nike, our mission is to bring inspiration and innovation to every athlete in the world.
+            Whether you're a professional athlete or just starting out, we believe that everyone has the potential to
+            achieve
+            greatness. That's why we are committed to creating products and experiences that help you reach your full
+            potential, both on and off the field.
+          </p>
+          <a class="button" href="#">Learn More</a>
+        </div>
+        <div class="image-wrapper">
+          <img src="images/nikestore500.jpg" alt="image of nike store" width="600" height="330">
+          <!--change this to 600 -->
+        </div>
+      </article>
+    </div>
+
+    <div class="fullscreen">
+      <article class="panel">
+        <div class="text-wrapper">
+          <h2>Products</h2>
+          <p> Our Products: Nike offers a wide range of products that are designed to meet the needs of athletes in all
+            sports. From running shoes to basketball gear, we have everything you need to perform your best. Our
+            products
+            are made with the latest technology and materials, and are rigorously tested to ensure they meet our high
+            standards for quality and performance.
+          </p>
+          <a class="button" href="#">Learn More</a>
+        </div>
+        <div class="image-wrapper left">
+          <img src="images/airmax500.jpg" alt="image of nike air max shoes" width="600" height="330">
+        </div>
+      </article>
+    </div>
+
+
+    <aside>
+      <p>
+        Pellentesque ante nisi, vestibulum in molestie sollicitudin, commodo quis dui. Donec eleifend gravida
+        lacinia.
+        Proin neque ante, iaculis at tellus ac, tempus pharetra mi. In magna turpis, vestibulum id est non,
+        venenatis
+        egestas libero. Donec magna dui, consequat vitae neque non, mollis eleifend odio. Sed cursus diam ac turpis
+        pellentesque sollicitudin. Donec hendrerit auctor condimentum. Suspendisse dapibus justo congue sapien
+        volutpat,
+        eget egestas elit posuere. Ut eget facilisis neque, id imperdiet nisl.
+      </p>
+    </aside>
+
+    <section class="cards">
+      <h2 class="sr-only">blah</h2>
+      <a class="card">
+        <img src="images/nikestore500.jpg" alt="nike store" width="500" height="330" loading="lazy">
+        <p>What We Do</p>
+      </a>
+      <a class="card">
+        <img src="images/airmax500.jpg" alt="air max" width="500" height="330" loading="lazy">
+        <p>Products</p>
+      </a>
+      <a class="card">
+        <img src="images/stadium500.jpg" alt="stadium" width="500" height="330" loading="lazy">
+        <p>Athletics</p>
+      </a>
+      <a class="card">
+        <img src="images/swoosh500.jpg" alt="nike swoosh" width="500" height="330" loading="lazy">
+        <p>blah blah</p>
+      </a>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>
+      Aliquam tincidunt arcu risus, eget aliquam orci malesuada eget
+    </p>
+  </footer>
+
+  <script>
+    const header = document.querySelector("header");
+
+    document.querySelector(".menu-icon").addEventListener("click", () => {
+      header.classList.toggle("close");
+    });
+  </script>
+</body>
+
+</html>
